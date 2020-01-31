@@ -2,9 +2,11 @@ import React from 'react';
 
 import Header from './Header/Header';
 
-const layout = () => {
+const layout = (props) => {
     return ( 
-        <Header />
+        <Header
+            layout={props.layout}
+        />
      );
 }
  

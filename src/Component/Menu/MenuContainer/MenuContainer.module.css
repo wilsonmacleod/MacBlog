@@ -1,0 +1,8 @@
+.Container{
+    width: 100%;
+    height: 85vmin;
+    position: absolute;
+    margin-top: 10vmin;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}

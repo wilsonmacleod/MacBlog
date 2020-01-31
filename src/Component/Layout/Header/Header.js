@@ -4,10 +4,12 @@ import Aux from '../../hoc/Auxiliary';
 import Title from './Title/Title';
 import Back from './Back/Back';
 
-const header = () => {
+const header = (props) => {
     return (
         <Aux>
-            <Title />
+            <Title 
+                title={props.layout.header.title}
+            />
             <Back />
         </Aux>
       );

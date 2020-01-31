@@ -2,9 +2,9 @@ import React from 'react';
 
 import classes from './Title.module.css'
 
-const title = () => {
+const title = (props) => {
     return ( 
-        <span className={classes.Font}>Welcome</span>
+        <span className={classes.Font}>{props.title}</span>
      );
 }
  

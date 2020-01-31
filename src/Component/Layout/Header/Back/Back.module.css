@@ -1,8 +1,7 @@
 .Arrow {
 	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 1.5%;
+	top: 4%;
+	left: 1%;
 	width: 3vmin;
 	height: 3vmin;
 	background: transparent;
@@ -10,7 +9,7 @@
 	border-right: 1vmin solid antiquewhite;
 	box-shadow: 0 0 0 lightgray;
 	transition: all 200ms ease;
-  	transform: translate3d(0,-50%,0) rotate(-135deg);
+	transform: translate3d(0,-50%,0) rotate(-135deg);
 	}
 
 .Arrow:hover {

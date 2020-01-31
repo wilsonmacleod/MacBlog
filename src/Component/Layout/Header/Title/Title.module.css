@@ -1,16 +1,16 @@
 .Font{
+    position: absolute;
+    top: 0;
+    right: 50%;
     color: antiquewhite;
     font-family: 'Bangers', cursive;
     font-size: 500%;
     text-decoration: underline;
     opacity: .8;
-    margin-left: 50%;
-    position: relative;
 }
 
 .Font:hover{
-    color: antiquewhite;
-    cursor: not-allowed;
+    color: white;
     text-shadow:
     -4px -4px 0 firebrick,
     4px -4px 0 firebrick,

@@ -1,0 +1,20 @@
+.Arrow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1.5%;
+	width: 3vmin;
+	height: 3vmin;
+	background: transparent;
+	border-top: 1vmin solid antiquewhite;
+	border-right: 1vmin solid antiquewhite;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+  	transform: translate3d(0,-50%,0) rotate(-135deg);
+	}
+
+.Arrow:hover {
+		border-color: firebrick;
+		opacity: 1;
+		box-shadow: 0.5vmin -0.5vmin 0 white;
+	}

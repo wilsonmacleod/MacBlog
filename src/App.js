@@ -1,13 +1,14 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-import Content from './Container/Content/Content';
+import Welcome from './Container/Welcome';
+import Content from './Container/Content';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-            <Content />
-      </header>
+      <Route path="/" exact component={Welcome} />
+      <Route path="/content" component={Content} />
     </div>
   );
 }

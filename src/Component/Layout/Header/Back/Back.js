@@ -4,10 +4,10 @@ import classes from './Back.module.css';
 
 
 
-const back = () => {
+const back = (props) => {
     return ( 
             <a 
-                href="https://wilsonmacleod.com/" 
+                href={props.link}
                 className={classes.Arrow} 
             />
         );

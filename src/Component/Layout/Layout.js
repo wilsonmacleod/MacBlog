@@ -1,12 +1,16 @@
 import React from 'react';
 
+import Aux from '../hoc/Auxiliary';
 import Header from './Header/Header';
+import Button from '../UI/Button/Button';
 
 const layout = (props) => {
     return ( 
-        <Header
-            layout={props.layout}
-        />
+        <Aux>
+            <Header
+                layout={props.layout}
+            />
+        </Aux>
      );
 }
  

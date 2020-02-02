@@ -6,3 +6,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
+
+.LongContainer{
+    width: 20%;
+    height: 85vmin;
+    position: absolute;
+    margin-top: 10vmin;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+}

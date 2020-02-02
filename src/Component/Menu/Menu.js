@@ -5,19 +5,22 @@ import Boxes from '../Menu/Boxes/Boxes';
 //menu stateful or func?
 
 const menu = (props) => {
-    console.log(props.menu.boxes)
     let propsInstructions = props.menu.boxes;
     let menuBoxRender = 
         propsInstructions.map(i => 
             <Boxes
-                key={i.title}
+                key={i.key}
+                val={i.key}
                 title={i.title}
                 desc={i.description}
                 pic={i.picture}
+                clicked={props.selected}
             />
             )
-    return ( 
-        <MenuContainer>
+    return (
+        <MenuContainer
+            containerType={props.menu.containerType}
+        >
             {menuBoxRender}
         </MenuContainer>
      );

@@ -4,13 +4,13 @@ import classes from './Boxes.module.css';
 
 const menuButton = (props) => {
     return ( 
-    <div className={classes.Mb}>
-    <div className={classes.TextContainer}>
-        <span className={classes.Title}>{props.title}</span>
-        <span className={classes.Desc}>{props.desc}</span>
-    </div>
-    <img src={props.pic} alt={''} />
-    </div>
+        <div className={classes.Mb} id={props.val} onClick={props.clicked}>
+            <div className={classes.TextContainer} id={props.val}>
+                <span className={classes.Title} id={props.val}>{props.title}</span>
+                <span className={classes.Desc} id={props.val}>{props.desc}</span>
+            </div>
+            <img src={props.pic} alt={''} id={props.val}/>
+        </div>
      );
 }
  

@@ -12,7 +12,6 @@
     overflow: hidden;
     border-radius: 0.9375em;
     opacity: .8;
-    z-index: 0;
 }
 
 .Mb:hover {
@@ -31,7 +30,6 @@
     border-right: 2px solid white;
     padding: 1vmin;
     cursor: pointer;
-    z-index: 10;
     overflow: wrap;
 }
 

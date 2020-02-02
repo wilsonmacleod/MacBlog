@@ -10,7 +10,9 @@ const header = (props) => {
             <Title 
                 title={props.layout.header.title}
             />
-            <Back />
+            <Back 
+                link={props.layout.header.backLink}
+            />
         </Aux>
       );
 }

@@ -11,6 +11,7 @@
 	transition: all 200ms ease;
 	transform: translate3d(0,-50%,0) rotate(-135deg);
 	cursor: pointer;
+	color: #282c34;
 	}
 
 .Arrow:hover {

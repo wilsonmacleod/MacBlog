@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Aux from '../Component/hoc/Auxiliary';
 import Layout from '../Component/Layout/Layout';
 import Menu from '../Component/Menu/Menu';
-import Display from '../Component/Display/Display';
+import DisplayContent from '../Component/DisplayContent/DisplayContent';
 
 import axios from '../axios';
 
@@ -14,6 +14,9 @@ class Content extends Component {
                 title: '',
                 backLink: '/' 
             },
+            admin: {
+                loginDisplay: false,
+            }
         },
         menu: {
             containerType: 'Long',
@@ -85,26 +88,25 @@ class Content extends Component {
             content: currentState
         });
     }
+    
+    adminRouteHandler = () => {
+        this.props.history.push('/adminView')
+    }
+
 
     render() {
         return ( 
             <Aux>
                 <Layout 
                     layout={this.state.layout}
-                />
+                    loginHandlers={{'toggleMode': this.adminRouteHandler}}/>
                 <Menu 
                     menu={this.state.menu}
-                    selected={this.selectContentByMenuBoxHandler}
-                />
-                {this.state.content.display ? 
-                    <Display 
-                        content={this.state.content}
-                    /> 
-                    : 
-                    null
-                }
+                    selected={this.selectContentByMenuBoxHandler}/>
+
+                    {this.state.content.display ? <DisplayContent content={this.state.content}/> : null}
+
             </Aux>
- 
          );
     }
 }

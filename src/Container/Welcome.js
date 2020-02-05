@@ -13,6 +13,9 @@ class Welcome extends Component {
                 title: 'WELCOME',
                 backLink: "https://wilsonmacleod.com/" 
             },
+            admin:{
+                loginDisplay: false
+            }
         },
         menu: {
             containerType: 'Normal',
@@ -23,7 +26,7 @@ class Welcome extends Component {
                     description: '',
                     picture: '',
                 }
-            ]
+            ],
         }
      }
 
@@ -36,6 +39,7 @@ class Welcome extends Component {
                 menu: loadMenuState
             })
         });
+
     }
 
     selectCategoryByMenuBoxHandler = (t) => {
@@ -46,16 +50,19 @@ class Welcome extends Component {
             });
     }
 
+    adminRouteHandler = () => {
+        this.props.history.push('/adminView')
+    }
+
     render() { 
         return (
             <Aux>
                 <Layout
                     layout={this.state.layout}
-                />
+                    loginHandlers={{'toggleMode': this.adminRouteHandler}}/>
                 <Menu 
                     menu={this.state.menu}
-                    selected={this.selectCategoryByMenuBoxHandler}
-                />
+                    selected={this.selectCategoryByMenuBoxHandler}/>
             </Aux>
           );
     }

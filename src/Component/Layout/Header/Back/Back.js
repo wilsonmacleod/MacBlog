@@ -9,7 +9,7 @@ const back = (props) => {
             <a 
                 href={props.link}
                 className={classes.Arrow} 
-            />
+                >-</a>
         );
 }
  

@@ -1,0 +1,33 @@
+.Form{
+	top: 6vmin;
+	left: 8vmin;
+	position: relative;
+}
+.Container{
+	display:block;
+	margin-bottom: 2vmin;
+}
+
+.Title{
+	float: left;
+	color: black;
+	font-weight: bold;
+	font-family: 'Bangers', cursive;
+	font-size: 200%;
+	margin-right: 3vmin;
+	text-shadow:
+    -6px -6px 0 white,
+    6px -6px 0 white,
+    -6px 6px 0 white,
+	6px 6px 0 white;
+}
+
+.Field{
+	border: 3px solid black;
+	border-radius: .9em;
+	outline: none;
+	color: black;
+	padding: 5px 8px 5px 8px;
+	background: #F0F8FF;
+	width:25%;
+}

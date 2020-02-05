@@ -1,5 +1,5 @@
 import React from 'react';
- 
+
 import MenuContainer from '../Menu/MenuContainer/MenuContainer';
 import Boxes from '../Menu/Boxes/Boxes';
 //menu stateful or func?
@@ -16,7 +16,7 @@ const menu = (props) => {
                 pic={i.picture}
                 clicked={props.selected}
             />
-            )
+        )
     return (
         <MenuContainer
             containerType={props.menu.containerType}

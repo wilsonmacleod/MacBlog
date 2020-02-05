@@ -15,7 +15,8 @@
 	top: 0;
 	right: 0;
 	font-family: 'Bangers', cursive;
-	font-size: 70%;
+	font-size: 60%;
+	opacity: .8;
 	text-shadow:
     -2px -2px 0 black,
     2px -2px 0 black,
@@ -25,14 +26,4 @@
 
 .AdminMode:hover{
 	background-color: lightgreen;
-}
-
-.Controls{
-	color: white;
-	font-family: 'Bangers', cursive;
-	font-size: 70%;
-	padding: 0;
-	display: inline-block;
-	max-width: 5%;
-	max-height: 5%;
 }

@@ -1,0 +1,13 @@
+.Hidden{
+    display: None;
+}
+
+.Show{
+    display: block;
+    position: absolute;
+}
+
+.Admin{
+    top: 3vmin;
+    right: 0vmin;
+}

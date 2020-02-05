@@ -1,0 +1,9 @@
+.AdminLoginFields{
+    max-width: 5vmin;
+    max-height: 3vmin;
+    z-index: 100;
+}
+
+.EnterSubmit{
+    display: none;
+}

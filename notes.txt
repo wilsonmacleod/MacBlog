@@ -1,0 +1,5 @@
+****
+TODO
+-add full admin mode   
+    -add, edit, rm posts and categories
+    -upload pictures or links

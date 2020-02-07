@@ -1,11 +1,44 @@
+.FormContainer{
+	display: grid;
+	height: inherit;
+	width: 200%;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+.SubFormContainer{
+	display: grid;
+	height: inherit;
+	width: 75%;
+	margin-left: 5vmin;
+    grid-template-columns: none;
+}
+
+.FormContainerDisabled{
+	display: grid;
+	height: inherit;
+	width: 200%;
+	grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+	pointer-events: none;
+	cursor: none;
+	opacity: .4;
+}
+
+.FormTitle{
+	font-weight: bold;
+	font-family: 'Bangers', cursive;
+	font-size: 2vmin;
+	text-decoration: underline;
+}
+
 .Form{
 	top: 6vmin;
 	left: 8vmin;
 	position: relative;
 }
+
 .Container{
 	display:block;
-	margin-bottom: 2vmin;
+	margin-bottom: 3vmin;
 }
 
 .Title{
@@ -24,7 +57,6 @@
 
 .Field{
 	border: 3px solid black;
-	border-radius: .9em;
 	outline: none;
 	color: black;
 	padding: 5px 8px 5px 8px;

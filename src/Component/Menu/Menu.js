@@ -2,7 +2,6 @@ import React from 'react';
 
 import MenuContainer from '../Menu/MenuContainer/MenuContainer';
 import Boxes from '../Menu/Boxes/Boxes';
-//menu stateful or func?
 
 const menu = (props) => {
     let propsInstructions = props.menu.boxes;
@@ -18,8 +17,7 @@ const menu = (props) => {
             />
         )
     return (
-        <MenuContainer
-            containerType={props.menu.containerType}
+        <MenuContainer containerType={props.menu.containerType}
         >
             {menuBoxRender}
         </MenuContainer>

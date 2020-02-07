@@ -17,9 +17,15 @@ const display = (props) => {
                 )
 
     }
+    let ele = null;
+    for(let x = 0; x < articleEle.length; x++){
+        if(String(articleEle[x].key) === String(props.content.chosenArticle)){
+            ele = articleEle[x];
+        }
+    }
     return (
         <DisplayContainer>
-            {articleEle[props.content.chosenArticle]}
+            {ele}
         </DisplayContainer>
       );
 }

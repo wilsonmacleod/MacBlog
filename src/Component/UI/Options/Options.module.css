@@ -1,0 +1,12 @@
+.Container{
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
+    padding: 1vmin;
+}
+
+.Title{
+    text-emphasis: bold;
+    text-decoration: underline;
+    font-family: 'Bangers', cursive;
+    font-size: 200%;
+}

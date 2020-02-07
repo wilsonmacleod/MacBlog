@@ -5,7 +5,9 @@
     left: 23%;
     margin-top: 12vmin;
     display: block;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     overflow-y: scroll;
+    overflow-x: hidden;
     background-color: antiquewhite;
     box-shadow: 3px 3px 3px 3px #000000;
     border: 2px solid black;

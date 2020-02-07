@@ -3,3 +3,48 @@ TODO
 -add full admin mode   
     -add, edit, rm posts and categories
     -upload pictures or links
+
+---
+DEFAULT WELCOME MENU .JSON
+
+                0: {
+                    'key': 'ANALYSES',
+                    'title':'ANALYSES',
+                    'description': "Some fun weekend data and Kaggle projects",
+                    'picture': ''
+                },
+                1: {
+                    'key': 'FOOD',
+                    'title':'FOOD',
+                    'description': "FOOD SPOTS SEATTLE AND HI"
+                },
+                2: {
+                    'key': 'GAMES',
+                    'title':'GAMES',
+                    'description': "",
+                    'picture': ''
+                },
+                3: {
+                    'key': 'LEARNINGS',
+                    'title':'LEARNINGS',
+                    'description': "New tech, courses and project thoughts/lessons",
+                    'picture': ''
+                },
+                4: {
+                    'key': 'MEDIA',
+                    'title':'MEDIA',
+                    'description': "MOVIES AND TV SHOWS",
+                    'picture': ''
+                },
+                5: {
+                    'key': 'TRAVELS',
+                    'title':'TRAVELS',
+                    'description': "Travels and trips!",
+                    'picture': ''
+                },
+                6: {
+                    'key': 'SPORTS',
+                    'title':'SPORTS',
+                    'description': "IMMA SPORTS MAHN",
+                    'picture': ''
+                }

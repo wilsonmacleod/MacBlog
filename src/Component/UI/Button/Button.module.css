@@ -27,3 +27,42 @@
 .AdminMode:hover{
 	background-color: lightgreen;
 }
+
+.Add{
+	color: black;
+	padding: 1.5vmin;
+	background-color: lightblue;
+	border: none;
+	opacity: .7;
+}
+
+.Add:hover{
+	opacity: 1;
+	font-weight: bold;
+}
+
+.Edit{
+	color: black;
+	padding: 1.5vmin;
+	background-color: lightgreen;
+	border: none;
+	opacity: .7;
+}
+
+.Edit:hover{
+	opacity: 1;
+	font-weight: bold;
+}
+
+.Delete{
+	color: black;
+	padding: 1.5vmin;
+	background-color: firebrick;
+	border: none;
+	opacity: .7;
+}
+
+.Delete:hover{
+	opacity: 1;
+	font-weight: bold;
+}

@@ -1,31 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 
 import Welcome from './Container/Welcome';
 import Content from './Container/Content';
 import Admin from './Container/Admin';
 
-class App extends Component {
-  state = {  }
+console.log(`${process.env.REACT_APP_API_KEY}`)
 
-  componentDidMount(){
-    const expirationDate = new Date(localStorage.getItem('tokenExpiration'));
-    if (expirationDate > new Date()) {
-      localStorage.removeItem('token');
-      localStorage.removeItem('userId');
-      localStorage.removeItem('tokenExpiration');
-    }
-  }
-
-  render() { 
-    return ( 
-      <div className="App">
-        <Route path="/" exact component={Welcome} />
-        <Route path="/content" component={Content} />
-        <Route path="/adminView" component={Admin} />
-    </div>
-     );
-  }
+const app = () => {
+  return ( 
+    <div className="App">
+    <Route path="/" exact component={Welcome} />
+    <Route path="/content" component={Content} />
+    <Route path="/adminView" component={Admin} />
+</div>
+   );
 }
  
-export default App;
+export default app;

@@ -64,11 +64,33 @@ class Content extends Component {
 
         axios.get(`https://dumpy-24fc9.firebaseio.com/${selectedCat}/menuTags.json`) //menu options
             .then(response => {
-                let data = response.data.filter(n => n);
+                let data = response.data;
+                try{
+                    data = data.filter(n => n);
+                }catch{
+                    let dataArray  = []
+                    let keys = Object.keys(data);
+                    for(let x=0; x < keys.length; x++){
+                        let key  = keys[x];
+                        dataArray[key] = data[key];
+                    }
+                    data = dataArray.filter(n => n)
+                };
                 loadMenuState.boxes = data;
                 axios.get(`https://dumpy-24fc9.firebaseio.com/${selectedCat}/Articles.json`) //content options
                     .then(response => {
-                        data = response.data.filter(n => n);
+                        let data = response.data;
+                        try{
+                            data = data.filter(n => n);
+                        }catch{
+                            let dataArray  = []
+                            let keys = Object.keys(data);
+                            for(let x=0; x < keys.length; x++){
+                                let key  = keys[x];
+                                dataArray[key] = data[key];
+                            }
+                            data = dataArray.filter(n => n)
+                        };
                         loadContentState.articles = data;
                         this.setState({ //set everything as configured in fb
                             loading: false,
@@ -77,7 +99,7 @@ class Content extends Component {
                             content: loadContentState
                         })
                     })
-            }).catch(error => console.log(error))
+            }).catch(err => this.props.history.goBack())
     }
 
     selectContentByMenuBoxHandler = (t) => {
@@ -103,6 +125,7 @@ class Content extends Component {
 
 
     render() {
+        
         let pageContent = 
             <Aux>
                 <Menu 
@@ -114,7 +137,7 @@ class Content extends Component {
         if(this.state.loading){
             pageContent = <Spinner />
         }
-        console.log(this.state)
+
         return ( 
             <Aux>
                 <Layout 

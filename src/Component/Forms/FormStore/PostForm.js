@@ -35,7 +35,7 @@ const postForm = (props) => {
                     id={'category'}
                     name={'post'}
                     className={classes.Field} 
-                    defaultValue={'Category'}
+                    defaultValue={config.categoryValue}
                     onChange={config.changeHandler}
                         > 
                         {selectOptions}

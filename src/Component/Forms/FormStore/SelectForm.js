@@ -14,7 +14,7 @@ const selectForm = (props) => {
     const deleteConfig = {
         'title': props.class === 'cat' ? 'DELETE CATEGORY' : 'DELETE POST',
         'btnType': 'Delete',
-        'btnClick': ''
+        'btnClick': props.handlers.delete
                 }
 
     const editOrDelete = {'edit': editConfig, 'delete': deleteConfig}
@@ -25,7 +25,13 @@ const selectForm = (props) => {
     let mapArray = []
     for(let x = 0; x < keys.length - 1; x++){
         if(props.class !== 'cat'){
-            let subDict = propsInstructions[keys[x]].menuTags.values();
+            let subDict = propsInstructions[keys[x]];
+            try{
+                subDict = subDict.menuTags.values();
+            }catch{
+                let arr = Array(subDict.menuTags);
+                subDict = arr.values();
+            }
             for(let each of subDict){
                 if(each !== null){
                     each['cat'] = keys[x]
@@ -39,7 +45,7 @@ const selectForm = (props) => {
     let menuRender = 
     mapArray.map(i => 
         <Options
-            key={i.key} 
+            key={`${i.cat}-${i.key}`} 
             val={props.class === 'cat' ? 'cat' : 'post'}
             id={props.class === 'cat' ? i.key : `${i.cat}-${i.key}`}
             cat={props.class === 'cat' ? null : i.cat}

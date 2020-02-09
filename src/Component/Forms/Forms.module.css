@@ -63,3 +63,22 @@
 	background: #F0F8FF;
 	width:25%;
 }
+
+.UnauthMsg {
+	color: firebrick;
+	position: absolute;
+	top: 40%;
+	right: 30%;
+	z-index: 100;
+	opacity: 1;
+	cursor: not-allowed;
+	font-weight: bold;
+	font-family: 'Anton', sans-serif;
+	font-size: 300%;
+	margin-right: 3vmin;
+	text-shadow:
+    -6px -6px 0 white,
+    6px -6px 0 white,
+    -6px 6px 0 white,
+	6px 6px 0 white;
+}

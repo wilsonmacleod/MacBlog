@@ -12,9 +12,22 @@
 .Font:hover{
     color: white;
     text-shadow:
-    -4px -4px 0 firebrick,
-    4px -4px 0 firebrick,
-    -4px 4px 0 firebrick,
-    4px 4px 0 firebrick;
+    -4px -4px 0 #4682B4,
+    4px -4px 0 #4682B4,
+    -4px 4px 0 #4682B4,
+    4px 4px 0 #4682B4;
     opacity: 1
+}
+
+@media only screen and (max-width: 700px) {
+    .Font{
+        position: absolute;
+        top: 0;
+        right: 30%;
+        color: antiquewhite;
+        font-family: 'Bangers', cursive;
+        font-size: 400%;
+        text-decoration: underline;
+        opacity: .8;
+    }
 }

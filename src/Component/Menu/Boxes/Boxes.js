@@ -10,7 +10,7 @@ const menuButton = (props) => {
                 <span className={classes.Desc} id={props.val}>{props.desc}</span>
                 {props.admin}
             </div>
-            <img src={props.pic} alt={''} id={props.val}/>
+            <img className={classes.Img} src={props.pic} alt={''} id={props.val}/>
         </div>
      );
 }

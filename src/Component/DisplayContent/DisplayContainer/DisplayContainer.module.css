@@ -13,3 +13,24 @@
     border: 2px solid black;
     opacity: .8;
 }
+
+
+@media only screen and (max-width: 700px) {
+    .Container{
+        width: 60%;
+        height: 95vmin;
+        position: absolute;
+        left: 30%;
+        margin-top: 16vmin;
+        display: block;
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: antiquewhite;
+        box-shadow: 3px 3px 3px 3px #000000;
+        border: 2px solid black;
+        opacity: .8;
+    }
+    
+
+}

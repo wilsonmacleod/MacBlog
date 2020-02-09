@@ -15,7 +15,7 @@
 	}
 
 .Arrow:hover {
-		border-color: firebrick;
+		border-color: #4682B4;
 		opacity: 1;
 		box-shadow: 0.5vmin -0.5vmin 0 white;
 	}

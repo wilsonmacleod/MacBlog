@@ -77,7 +77,7 @@ class Admin extends Component {
         const tokenExpired = localStorage.getItem('tokenExpiration');
         if(token !== null && new Date(tokenExpired) > new Date()){
             const refreshToken = localStorage.getItem('refreshToken');
-            const url = `https://securetoken.googleapis.com/v1/token?key=AIzaSyAR6VG1NjRXWTN6bTHE-LoV1NokfolQKm4`;
+            const url = `https://securetoken.googleapis.com/v1/token?key=${process.env.REACT_APP_MACBLOG_API_KEY}`;
             const body = {"grant_type": "refresh_token", "refresh_token": refreshToken}
             axios.post(url, body)
             .then(response => {
@@ -126,7 +126,7 @@ class Admin extends Component {
         event.preventDefault();
         let username = this.state.layout.admin.loginUserField;
         let pw = this.state.layout.admin.loginPwField
-        let url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAR6VG1NjRXWTN6bTHE-LoV1NokfolQKm4`;
+        let url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.REACT_APP_MACBLOG_API_KEY}`;
         let authData = {
             email: username,
             password: pw,
